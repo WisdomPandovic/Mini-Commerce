@@ -17,7 +17,7 @@ export default function SearchPage() {
 
   return (
     <div className="p-6 max-w-6xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Search Results for "{query}"</h1>
+      <h1 className="text-2xl font-bold mb-4">Search Results for &apos;{query}&apos;</h1>
 
       {filtered.length === 0 ? (
         <p>No products found.</p>

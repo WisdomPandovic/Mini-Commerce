@@ -1,35 +1,37 @@
 'use client'
 
 import { useEffect, useState } from 'react';
-import { useQuery } from '@tanstack/react-query'
 import { Product } from '@/types/product'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Ring } from '@uiball/loaders'
 import Catalogue from '@/components/Catalogue/Catalogue'
-import { seedProductsToLocalStorage, getProducts } from '@/utils/seed'
+import { getProducts } from '@/utils/seed'
 import HomeBanner from '@/components/HomeBanner/HomeBanner'
 import BlogSection from '@/components/BlogComponents/BlogSection'
 import ProductCategories from '@/components/ProductCategories/ProductCategories'
 import { FaShippingFast, FaUndoAlt, FaHeadset, FaGift } from "react-icons/fa";
 
 export default function HomePage() {
-    const [products, setProducts] = useState<Product[]>([]);
-
     useEffect(() => {
         if (typeof window !== 'undefined') {
-            setProducts(getProducts());
+            getProducts(); // Trigger the function if needed (e.g. to seed localStorage)
         }
     }, []);
 
     return (
         <main className="">
-              <HomeBanner />
-              <Catalogue />
+            <HomeBanner />
+            <Catalogue />
             {/* Limted Offer  */}
             <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="flex items-center justify-center bg-gray-200">
-                    <img src="/images/1.jpg" alt="banner" className="w-full max-h-[250px] shadow-xl object-cover" />
+                    <Image
+                        src="/images/1.jpg"
+                        alt="banner"
+                        width={800}
+                        height={250}
+                        className="w-full max-h-[250px] shadow-xl object-cover"
+                    />
                 </div>
 
                 <div className="bg-black p-8">
@@ -37,10 +39,10 @@ export default function HomePage() {
                     <h2 className="text-white sm:text-3xl text-lg font-bold mt-4">35% Off only this Friday</h2>
                     <h2 className="text-white sm:text-3xl text-lg font-bold mt-2">and get special gift</h2>
                     <Link href="/stores/shop">
-                    <button className="bg-white text-black text-sm my-4 px-4 py-2 rounded inline-flex items-center gap-2 cursor-pointer">
-                        Grab it now
-                        <span>&rarr;</span>
-                    </button>
+                        <button className="bg-white text-black text-sm my-4 px-4 py-2 rounded inline-flex items-center gap-2 cursor-pointer">
+                            Grab it now
+                            <span>&rarr;</span>
+                        </button>
                     </Link>
                 </div>
             </div>
@@ -49,9 +51,11 @@ export default function HomePage() {
             <div className='bg-[#f7f7f7] my-10 mx-5'>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-9 ">
                     <div className="relative">
-                        <img
+                        <Image
                             src="/images/smada-store.jpg"
                             alt="Mini-Commerce Store"
+                            width={800}
+                            height={300}
                             className="w-full h-[300px] object-cover shadow-md"
                         />
                     </div>
@@ -62,9 +66,9 @@ export default function HomePage() {
                             Welcome to Mini-Commerce, where innovation meets excellence. Founded with a passion for delivering top-notch products and services, we are dedicated to creating solutions that make life easier, more enjoyable, and more fulfilling for our customers.
                         </p>
                         <Link href="/about">
-                        <button className="bg-white text-black font-bold text-sm uppercase mt-5 py-3 px-4 shadow-md hover:bg-black hover:text-[white] transition duration-300 cursor-pointer">
-                            Find Out More
-                        </button>
+                            <button className="bg-white text-black font-bold text-sm uppercase mt-5 py-3 px-4 shadow-md hover:bg-black hover:text-[white] transition duration-300 cursor-pointer">
+                                Find Out More
+                            </button>
                         </Link>
                     </div>
                 </div>

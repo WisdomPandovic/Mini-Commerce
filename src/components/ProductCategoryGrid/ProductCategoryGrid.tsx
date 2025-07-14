@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getProducts } from '@/utils/seed'; 
-import { Product } from '@/types/product'; 
+// import { Product } from '@/types/product'; 
 
 const ProductCategoryGrid = () => {
   // const [products, setProducts] = useState<Product[]>([]);
