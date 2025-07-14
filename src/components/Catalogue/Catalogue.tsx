@@ -35,13 +35,19 @@ export default function Catalogue() {
                 {products.map((product) => (
                     <Link key={product.id} href={`/product/${product.slug}`} className="border rounded p-3 bg-white shadow">
                         <div className="relative w-full h-48 mb-2">
-                            <Image src={product.image} alt={product.name} fill className="object-cover rounded" />
+                            <Image
+                                src={product.image}
+                                alt={product.name}
+                                fill
+                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                                className="object-cover rounded"
+                            />
                         </div>
 
                         <div className="flex flex-col items-center text-center">
-                  <h2 className="text-black font-semibold">{product.name}</h2>
-                  <p className="text-pink-500 font-bold">${product.price.toFixed(2)}</p>
-                </div>
+                            <h2 className="text-black font-semibold">{product.name}</h2>
+                            <p className="text-pink-500 font-bold">${product.price.toFixed(2)}</p>
+                        </div>
                     </Link>
                 ))}
             </div>

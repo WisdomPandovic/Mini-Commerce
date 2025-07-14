@@ -24,13 +24,13 @@ export default function HomePage() {
             <Catalogue />
             {/* Limted Offer  */}
             <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="flex items-center justify-center bg-gray-200">
+                <div className="relative w-full h-[250px] flex items-center justify-center bg-gray-200">
                     <Image
                         src="/images/1.jpg"
                         alt="banner"
-                        width={800}
-                        height={250}
-                        className="w-full max-h-[250px] shadow-xl object-cover"
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1152px"
+                        className="object-cover shadow-xl"
                     />
                 </div>
 
@@ -50,13 +50,14 @@ export default function HomePage() {
 
             <div className='bg-[#f7f7f7] my-10 mx-5'>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-9 ">
-                    <div className="relative">
+                    <div className="relative w-full h-[300px]">
                         <Image
                             src="/images/smada-store.jpg"
                             alt="Mini-Commerce Store"
-                            width={800}
-                            height={300}
-                            className="w-full h-[300px] object-cover shadow-md"
+                            fill
+                            priority
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                            className="object-cover rounded shadow-md"
                         />
                     </div>
 
