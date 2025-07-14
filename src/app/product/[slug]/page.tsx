@@ -92,7 +92,10 @@ export default function ProductDetail() {
 
             {/* Buttons */}
             <div className="grid grid-cols-2 sm:grid-cols-1 gap-4 mt-6">
-              <button className="bg-black rounded text-white font-bold py-2 px-4 shadow-md hover:bg-white hover:text-black border border-black transition duration-300">
+              <button
+                className="bg-black rounded text-white font-bold py-2 px-4 shadow-md hover:bg-white hover:text-black border border-black transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled={!selectedColor || !selectedSize}
+              >
                 Buy Product
               </button>
 
@@ -123,7 +126,7 @@ export default function ProductDetail() {
             {/* Additional Info */}
             <div className="mt-7 text-sm text-gray-600">
               <p>
-              {product.description}
+                {product.description}
               </p>
             </div>
           </div>
