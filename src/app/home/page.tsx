@@ -1,7 +1,7 @@
 'use client'
 
-import { useEffect, useState } from 'react';
-import { Product } from '@/types/product'
+import { useEffect } from 'react';
+// import { Product } from '@/types/product'
 import Link from 'next/link'
 import Image from 'next/image'
 import Catalogue from '@/components/Catalogue/Catalogue'
