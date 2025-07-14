@@ -20,6 +20,7 @@ const Header: FC = () => {
     if (searchTerm.trim()) {
       router.push(`/search?q=${encodeURIComponent(searchTerm.trim())}`);
       setSearchTerm('');
+      if (isOpen) toggleMenu();
     }
   };
 
