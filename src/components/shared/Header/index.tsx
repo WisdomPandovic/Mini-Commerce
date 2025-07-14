@@ -2,26 +2,17 @@
 import { FC, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { FaShoppingCart, FaUser, FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
+import { FaShoppingCart, FaBars, FaTimes} from 'react-icons/fa';
 import { useCartStore } from '@/store/cartStore'
 
 const Header: FC = () => {
   const { items } = useCartStore(state => state)
   const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const router = useRouter();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
-
-  const closeDropdown = () => {
-    setIsDropdownOpen(false);
   };
 
   const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {

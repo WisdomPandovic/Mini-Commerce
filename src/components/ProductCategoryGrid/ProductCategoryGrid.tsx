@@ -5,7 +5,7 @@ import { getProducts } from '@/utils/seed';
 import { Product } from '@/types/product'; 
 
 const ProductCategoryGrid = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+  // const [products, setProducts] = useState<Product[]>([]);
   const [menCount, setMenCount] = useState(0);
   const [womenCount, setWomenCount] = useState(0);
   const [underwearCount, setUnderwearCount] = useState(0);
@@ -13,7 +13,6 @@ const ProductCategoryGrid = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const fetchedProducts = getProducts(); 
-      setProducts(fetchedProducts);
 
       // Calculate counts for each category
       const menProducts = fetchedProducts.filter(product => product.category === 'Men');
