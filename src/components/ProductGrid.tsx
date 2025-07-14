@@ -15,15 +15,15 @@ export default function ProductGrid() {
 
   const normalized = (text: string) =>
     text.toLowerCase().replace(/\s+/g, '')
-  
+
   const filtered = products?.filter(product => {
     const productName = normalized(product.name)
     const search = normalized(searchTerm)
-  
+
     const matchesSearch = productName.includes(search)
     const matchesCategory = selectedCategory ? product.category === selectedCategory : true
     return matchesSearch && matchesCategory
-  }) || []  
+  }) || []
 
   if (isLoading) {
     return (
@@ -85,6 +85,7 @@ export default function ProductGrid() {
                     src={product.image}
                     alt={product.name}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover rounded"
                   />
                 </div>

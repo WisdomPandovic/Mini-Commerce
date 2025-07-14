@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import QueryProvider from '@/providers/query-provider'
+import { Toaster } from 'react-hot-toast'
 import Header from "@/components/shared/Header";
 import Footer from '@/components/shared/Footer';
 import "./globals.css";
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <QueryProvider>
           <Header />
+          <Toaster position="top-right" />
           {children}
           <Footer />
         </QueryProvider>

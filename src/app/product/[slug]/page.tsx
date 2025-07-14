@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useParams, notFound } from 'next/navigation'
 import Image from 'next/image'
+import toast from 'react-hot-toast'
 import { Button } from '@mui/material'
 import { useCartStore } from '@/store/cartStore'
 import products from '@/data/products.json'
@@ -35,6 +36,7 @@ export default function ProductDetail() {
               width={500}
               height={500}
               className="rounded-lg object-cover w-full h-full"
+              priority
             />
           </div>
 
@@ -95,7 +97,10 @@ export default function ProductDetail() {
               </button>
 
               <Button
-                onClick={() => addToCart(product)}
+                onClick={() => {
+                  addToCart(product)
+                  toast.success(`${product.name} added to cart!`)
+                }}
                 sx={{
                   backgroundColor: 'white',
                   color: 'black',

@@ -22,6 +22,7 @@ export default function HomePage() {
         <main className="">
             <HomeBanner />
             <Catalogue />
+            
             {/* Limted Offer  */}
             <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="relative w-full h-[250px] flex items-center justify-center bg-gray-200">
