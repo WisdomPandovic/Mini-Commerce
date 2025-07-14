@@ -61,8 +61,8 @@ export default function HomePage() {
                     </div>
 
                     <div className="p-1">
-                        <h2 className="text-3xl font-bold mb-4">About Mini-Commerce Store</h2>
-                        <p className="mb-4">
+                        <h2 className="text-black text-3xl font-bold mb-4">About Mini-Commerce Store</h2>
+                        <p className="text-black mb-4">
                             Welcome to Mini-Commerce, where innovation meets excellence. Founded with a passion for delivering top-notch products and services, we are dedicated to creating solutions that make life easier, more enjoyable, and more fulfilling for our customers.
                         </p>
                         <Link href="/about">
@@ -77,25 +77,25 @@ export default function HomePage() {
 
                     <div className="flex flex-col items-center text-center">
                         <FaShippingFast className="text-4xl text-yellow-500 mb-2" />
-                        <h3 className="font-semibold text-lg">Fast Free Shipping</h3>
+                        <h3 className="font-semibold text-black text-lg">Fast Free Shipping</h3>
                         <p className="text-sm text-gray-600">Get your orders deliveyellow fast and free.</p>
                     </div>
 
                     <div className="flex flex-col items-center text-center">
                         <FaUndoAlt className="text-4xl text-yellow-500 mb-2" />
-                        <h3 className="font-semibold text-lg">30 Day Money Back</h3>
+                        <h3 className="font-semibold text-black text-lg">30 Day Money Back</h3>
                         <p className="text-sm text-gray-600">Enjoy a risk-free shopping experience with our 30-day guarantee.</p>
                     </div>
 
                     <div className="flex flex-col items-center text-center">
                         <FaHeadset className="text-4xl text-yellow-500 mb-2" />
-                        <h3 className="font-semibold text-lg">24/7 Help Center</h3>
+                        <h3 className="font-semibold text-black text-lg">24/7 Help Center</h3>
                         <p className="text-sm text-gray-600">We&apos;re here to help you any time of the day.</p>
                     </div>
 
                     <div className="flex flex-col items-center text-center">
                         <FaGift className="text-4xl text-yellow-500 mb-2" />
-                        <h3 className="font-semibold text-lg">Many Promotional Gifts</h3>
+                        <h3 className="font-semibold text-black text-lg">Many Promotional Gifts</h3>
                         <p className="text-sm text-gray-600">Receive exclusive gifts with your purchases.</p>
                     </div>
                 </div>

@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
             <div>
-              <h4 className="text-sm text- black font-bold mb-4 uppercase">About Us</h4>
+              <h4 className="text-sm text-black font-bold mb-4 uppercase">About Us</h4>
               <ul className="space-y-2 text-[#8fa2b0] text-xs">
                 <li><a href="/about" className="hover:underline">Our Story</a></li>
                 <li><a href="/team" className="hover:underline">Our Team</a></li>
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
             </div>
 
             <div>
-              <h4 className="text-sm text- black font-bold mb-4 uppercase">Customer Service</h4>
+              <h4 className="text-sm text-black font-bold mb-4 uppercase">Customer Service</h4>
               <ul className="space-y-2 text-[#8fa2b0] text-xs">
                 <li><a href="/contact" className="hover:underline">Contact Us</a></li>
                 <li><a href="/faq" className="hover:underline">FAQ</a></li>
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
             </div>
 
             <div>
-              <h4 className="text-sm text- black font-bold mb-4 uppercase">Follow Us</h4>
+              <h4 className="text-sm text-black font-bold mb-4 uppercase">Follow Us</h4>
               <ul className="space-y-2 text-[#8fa2b0] text-xs">
                 <li><a href="https://facebook.com" className="hover:underline">Facebook</a></li>
                 <li><a href="https://twitter.com" className="hover:underline">Twitter</a></li>
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
             </div>
 
             <div>
-              <h4 className="text-sm text- black font-bold mb-4 uppercase">Legal</h4>
+              <h4 className="text-sm text-black font-bold mb-4 uppercase">Legal</h4>
               <ul className="space-y-2 text-[#8fa2b0] text-xs">
                 <li><a href="/terms" className="hover:underline">Terms of Service</a></li>
                 <li><a href="/privacy" className="hover:underline">Privacy Policy</a></li>

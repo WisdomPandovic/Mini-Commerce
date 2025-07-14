@@ -39,7 +39,7 @@ export default function Catalogue() {
                         </div>
 
                         <div className="flex flex-col items-center text-center">
-                  <h2 className="font-semibold">{product.name}</h2>
+                  <h2 className="text-black font-semibold">{product.name}</h2>
                   <p className="text-pink-500 font-bold">${product.price.toFixed(2)}</p>
                 </div>
                     </Link>

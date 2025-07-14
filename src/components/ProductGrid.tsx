@@ -46,7 +46,7 @@ export default function ProductGrid() {
     <div className="max-w-6xl mx-auto px-4 my-8">
       {/* Filters */}
       <div className="flex justify-between items-center flex-wrap gap-3 mb-6">
-        <h2 className="text-2xl font-bold">Product</h2>
+        <h2 className="text-black text-2xl font-bold">Product</h2>
 
         <div className="flex flex-wrap gap-2 items-center">
           <select
@@ -89,7 +89,7 @@ export default function ProductGrid() {
                   />
                 </div>
                 <div className="flex flex-col items-center text-center">
-                  <h2 className="font-semibold">{product.name}</h2>
+                  <h2 className="text-black font-semibold">{product.name}</h2>
                   <p className="text-pink-500 font-bold">${product.price.toFixed(2)}</p>
                 </div>
               </div>

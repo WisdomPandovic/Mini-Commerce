@@ -44,7 +44,7 @@ const BlogSection = () => {
           </div>
         
           <div className="mt-4">
-            <h3 className="text-lg font-semibold mb-2 text-center">{blog.title}</h3>
+            <h3 className="text-lg text-black font-semibold mb-2 text-center">{blog.title}</h3>
             <p className="text-sm text-gray-600 mb-4 text-center">{blog.description}</p>
             <div className="flex justify-center mt-4">
               <button className="bg-white text-xs text-black border-2 border-yellow-500 py-2 px-6 hover:bg-black hover:text-white hover:border-black transition duration-300 cursor-pointer">

@@ -40,13 +40,13 @@ export default function ProductDetail() {
 
           {/* Product Info */}
           <div className="flex flex-col gap-4">
-            <h1 className="text-3xl font-bold">{product.name}</h1>
+            <h1 className="text-black text-3xl font-bold">{product.name}</h1>
             <p className="text-gray-700">{product.header}</p>
             <p className="text-xl text-pink-600 font-semibold">${product.price.toFixed(2)}</p>
 
             {/* Color Options */}
             <div>
-              <p className="font-medium mb-1">Color:</p>
+              <p className="text-black font-medium mb-1">Color:</p>
               <div className="flex gap-3">
                 {colors.map((color) => (
                   <div
@@ -71,7 +71,7 @@ export default function ProductDetail() {
 
             {/* Size Options */}
             <div>
-              <h2 className="text-sm font-semibold mb-2">Size Options</h2>
+              <h2 className="text-sm text-black font-semibold mb-2">Size Options</h2>
               <div className="flex flex-wrap gap-2">
                 {sizes.map((size) => (
                   <button

@@ -45,8 +45,8 @@ export default function CartPage() {
                     <div className="grid grid-cols-1 md:[grid-template-columns:2fr_1fr] gap-6">
                         <div className="space-y-6">
                             <div className='flex justify-between items-center'>
-                                <h1 className="text-lg font-bold">Shopping Cart</h1>
-                                <p className='text-sm font-semibold'>{items.length} items</p>
+                                <h1 className="text-black text-lg font-bold">Shopping Cart</h1>
+                                <p className='text-black text-sm font-semibold'>{items.length} items</p>
                             </div>
                             {items.map(item => (
                                 <div
@@ -65,7 +65,7 @@ export default function CartPage() {
 
                                     {/* Name */}
                                     <div className="text-center sm:text-left">
-                                        <h2 className="text-sm font-semibold">{item.name}</h2>
+                                        <h2 className="text-black text-sm font-semibold">{item.name}</h2>
                                     </div>
 
                                     {/* Price */}
@@ -106,7 +106,7 @@ export default function CartPage() {
 
                         <div className="bg-gray-200 p-4">
                             <div className='flex justify-between items-center border-b'>
-                                <h2 className="text-lg font-bold my-5">Summary</h2>
+                                <h2 className="text-black text-lg font-bold my-5">Summary</h2>
                                 <button
                                     onClick={clearCart}
                                     className="text-black px-4 py-2 rounded hover:bg-black hover:text-white transition cursor-pointer"
@@ -115,16 +115,16 @@ export default function CartPage() {
                                 </button>
                             </div>
                             <div className='flex justify-between items-center text-sm my-3'>
-                                <p className='text-sm font-semibold my-3 uppercase'>Items {items.length}</p>
-                                <p className="text-md font-semibold">Subtotal: ${subtotal.toFixed(2)}</p>
+                                <p className='text-black text-sm font-semibold my-3 uppercase'>Items {items.length}</p>
+                                <p className="text-black text-md font-semibold">Subtotal: ${subtotal.toFixed(2)}</p>
                             </div>
                             <div className='flex justify-between items-center text-sm my-3 border-b'>
-                                <p className='font-semibold my-5'>Shipping</p>
-                                <p>${shippingCost.toFixed(2)}</p>
+                                <p className='text-black font-semibold my-5'>Shipping</p>
+                                <p className='text-black'>${shippingCost.toFixed(2)}</p>
                             </div>
                             <div className='flex justify-between items-center text-sm my-3'>
-                                <p className='font-semibold my-5'>Total Price</p>
-                                <p>${total.toFixed(2)}</p>
+                                <p className='text-black font-semibold my-5'>Total Price</p>
+                                <p className='text-black'>${total.toFixed(2)}</p>
                             </div>
 
                             <button className="w-full py-3 rounded text-white font-bold bg-black relative overflow-hidden group uppercase">

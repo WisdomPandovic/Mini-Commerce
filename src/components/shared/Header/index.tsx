@@ -78,17 +78,14 @@ const Header: FC = () => {
           <Link href="/home" className="text-sm font-bold" onClick={toggleMenu}>
             Home
           </Link>
-          <Link href="/" className="text-sm font-bold" onClick={toggleMenu}>
+          <Link href="/stores/shop" className="text-sm font-bold" onClick={toggleMenu}>
             Shop
           </Link>
-          <Link href="/" className="text-sm font-bold" onClick={toggleMenu}>
+          <Link href="/stores/women-wear" className="text-sm font-bold" onClick={toggleMenu}>
             Women
           </Link>
-          <Link href="/" className="text-sm font-bold" onClick={toggleMenu}>
+          <Link href="/stores/women-wear" className="text-sm font-bold" onClick={toggleMenu}>
             Men
-          </Link>
-          <Link href="/" className="text-sm font-bold">
-            Catalog
           </Link>
         </nav>
         <div className="flex flex-col space-y-4">

@@ -22,7 +22,7 @@ export default function CheckoutPage() {
 
     return (
         <div className="max-w-4xl mx-auto p-6">
-            <h1 className="text-2xl font-bold mb-4">Order Summary</h1>
+            <h1 className="text-black text-2xl font-bold mb-4">Order Summary</h1>
 
             {items.length === 0 ? (
                 <p>Your cart is empty.</p>
@@ -35,9 +35,9 @@ export default function CheckoutPage() {
                                     <Image src={item.image} alt={item.name} fill className="object-cover rounded" />
                                 </div>
                                 <div>
-                                    <h2 className="text-sm font-semibold">{item.name}</h2>
+                                    <h2 className="text-black text-sm font-semibold">{item.name}</h2>
                                     <p className="text-sm text-gray-600">Qty: {item.quantity}</p>
-                                    <p className="text-sm font-semibold">${(item.price * item.quantity).toFixed(2)}</p>
+                                    <p className="text-black text-sm font-semibold">${(item.price * item.quantity).toFixed(2)}</p>
                                 </div>
                             </li>
                         ))}
@@ -45,17 +45,17 @@ export default function CheckoutPage() {
 
                     <div className='border-b border-t my-5 py-7'>
                         <div className="mt-6 flex justify-between items-center text-sm">
-                            <span className=' font-semibold'>Subtotal:</span>
-                            <span>${subtotal.toFixed(2)}</span>
+                            <span className='text-black font-semibold'>Subtotal:</span>
+                            <span className='text-black'>${subtotal.toFixed(2)}</span>
                         </div>
                         <div className="mt-6 flex justify-between items-center text-sm">
-                            <span className=' font-semibold'>Shipping:</span>
-                            <span>${shipping.toFixed(2)}</span>
+                            <span className='text-black font-semibold'>Shipping:</span>
+                            <span className='text-black'>${shipping.toFixed(2)}</span>
                         </div>
                     </div>
                     <div className="mt-6 flex justify-between items-center text-sm">
-                        <span className=' font-semibold'>Total (USD)</span>
-                        <span>${total.toFixed(2)}</span>
+                        <span className='text-black font-semibold'>Total (USD)</span>
+                        <span className='text-black'>${total.toFixed(2)}</span>
                     </div>
                     <button
                         onClick={handlePlaceOrder}
