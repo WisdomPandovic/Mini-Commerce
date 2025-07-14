@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Mini-Commerce Store",
     description: "An e-commerce platform for listing and managing products.",
     images: ["/images/og-image.jpg"],
-    url: "https://smada-store.vercel.app",
+    url: "https://mini-commerce-roan.vercel.app/",
   },
   robots: {
     index: true,
