@@ -67,8 +67,8 @@ const Header: FC = () => {
         </Link>
       </div>
 
-      <div className="md:hidden flex items-center space-x-4 z-50 relative">
-        <button onClick={toggleMenu} className="text-xl z-50 relative">
+      <div className="md:hidden absolute top-4 right-4 z-[100]">
+        <button onClick={toggleMenu} className="text-2xl">
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>

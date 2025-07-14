@@ -23,7 +23,7 @@ const HomeBanner = () => {
 
         <div className="flex justify-center gap-4">
           <Link
-            href="/shop"
+            href="/stores/shop"
             className="bg-white text-black font-semibold px-6 py-2 rounded hover:bg-yellow-200 transition"
           >
             Shop Now
