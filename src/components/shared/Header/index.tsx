@@ -2,7 +2,7 @@
 import { FC, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { FaShoppingCart, FaBars, FaTimes} from 'react-icons/fa';
+import { FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa';
 import { useCartStore } from '@/store/cartStore'
 
 const Header: FC = () => {
@@ -47,7 +47,7 @@ const Header: FC = () => {
       </div>
 
       <div className="hidden md:flex items-center space-x-4 relative">
-      <form onSubmit={handleSearchSubmit} className="relative">
+        <form onSubmit={handleSearchSubmit} className="relative">
           <input
             type="text"
             placeholder="Search..."
@@ -67,13 +67,13 @@ const Header: FC = () => {
         </Link>
       </div>
 
-      <div className="md:hidden flex items-center space-x-4">
-        <button onClick={toggleMenu} className="text-xl">
+      <div className="md:hidden flex items-center space-x-4 z-50 relative">
+        <button onClick={toggleMenu} className="text-xl z-50 relative">
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
-      <div className={`fixed top-0 left-0 w-full bg-white p-4 space-y-4 md:hidden transition-transform ${isOpen ? 'transform translate-x-0' : 'transform -translate-x-full'}`}>
+      <div className={`fixed top-0 left-0 w-full bg-white p-4 space-y-4 z-50 md:hidden transition-transform ${isOpen ? 'transform translate-x-0' : 'transform -translate-x-full'}`}>
         <nav className="flex flex-col space-y-4">
           <Link href="/home" className="text-sm font-bold" onClick={toggleMenu}>
             Home
@@ -84,22 +84,27 @@ const Header: FC = () => {
           <Link href="/stores/women-wear" className="text-sm font-bold" onClick={toggleMenu}>
             Women
           </Link>
-          <Link href="/stores/women-wear" className="text-sm font-bold" onClick={toggleMenu}>
+          <Link href="/stores/men-wear" className="text-sm font-bold" onClick={toggleMenu}>
             Men
           </Link>
         </nav>
         <div className="flex flex-col space-y-4">
-        <form onSubmit={handleSearchSubmit} className="flex items-center gap-2">
-          <input
-            type="text"
-            placeholder="Search..."
-            value={searchTerm}
-            onChange={e => setSearchTerm(e.target.value)}
-            className="w-full border border-gray-300 px-3 py-1 rounded text-sm"
-          />
-        </form>
-          <Link href="/cart" className="text-sm" onClick={toggleMenu}>
-            <FaShoppingCart />
+          <form onSubmit={handleSearchSubmit} className="flex items-center gap-2">
+            <input
+              type="text"
+              placeholder="Search..."
+              value={searchTerm}
+              onChange={e => setSearchTerm(e.target.value)}
+              className="w-full border border-gray-300 px-3 py-1 rounded text-sm"
+            />
+          </form>
+          <Link href="/cart" className="text-sm relative w-fit self-start">
+            <FaShoppingCart className="text-sm sm:text-base text-gray-700 hover:text-gray-900 cursor-pointer" />
+            {items.length > 0 && (
+              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+                {items.length}
+              </span>
+            )}
           </Link>
         </div>
       </div>

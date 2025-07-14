@@ -35,7 +35,7 @@ export default function CartPage() {
                 <div className="col-span-full text-center">
                     <p className="text-gray-500 text-gray-500">🛒Your cart is empty.</p>
                     <p className="text-sm text-gray-500 mt-2">Start shopping and add items to your cart.</p>
-                    <Link href="/shop"
+                    <Link href="/stores/shop"
                         className="mt-4 inline-block bg-black text-white px-5 py-2 rounded-full text-sm hover:bg-gray-800">
                         Browse Products
                     </Link>
