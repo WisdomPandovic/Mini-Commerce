@@ -1,0 +1,107 @@
+[
+    {
+      "id": "1",
+      "slug": "basic-tee",
+      "name": "Basic Tee",
+      "header": "Everyday Comfort, Timeless Style",
+      "description": "A comfortable and stylish cotton t-shirt perfect for daily wear. Made from soft, breathable fabric to keep you cool and confident.",
+      "image": "/images/short.jpg",
+      "price": 25,
+      "category": "Men",
+      "rating": 5,
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "White", "Gray"]
+    },
+    {
+      "id": "2",
+      "slug": "premium-hoodie",
+      "name": "Premium Hoodie",
+      "header": "Elevated Warmth with a Premium Feel",
+      "description": "Stay warm and cozy with this high-quality hoodie. Features a soft fleece lining and adjustable drawstring hood for maximum comfort and versatility.",
+      "image": "/images/hoodie1.jpg",
+      "price": 55,
+      "category": "Men",
+      "rating": 5,
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "White", "Gray"]
+    },
+    {
+      "id": "3",
+      "slug": "denim-jeans",
+      "name": "Denim Jeans",
+      "header": "Classic Denim for Modern Comfort",
+      "description": "Classic fit jeans made from durable denim. Designed for everyday wear with a relaxed fit and timeless style that never goes out of fashion.",
+      "image": "/images/jeans1.jpg",
+      "price": 45,
+      "category": "Women",
+      "rating": 5,
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "White", "Gray"]
+    },
+    {
+      "id": "4",
+      "slug": "sneakers",
+      "name": "Running Sneakers",
+      "header": "Lightweight Sneakers for Active Days",
+      "description": "Lightweight sneakers designed for everyday wear. Supportive cushioning, breathable mesh, and a sleek design that works on and off the track.",
+      "image": "/images/sneakers1.jpg",
+      "price": 70,
+      "category": "Men",
+      "rating": 5,
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "White", "Gray"]
+    },
+    {
+      "id": "5",
+      "slug": "backpack",
+      "name": "Classic Backpack",
+      "header": "Durability Meets Functionality",
+      "description": "A durable backpack with plenty of space for your essentials. Ideal for work, school, or travel with multiple compartments and ergonomic straps.",
+      "image": "/images/backpack1.jpg",
+      "price": 40,
+      "category": "Women",
+      "rating": 5,
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "White", "Gray"]
+    },
+    {
+      "id": "6",
+      "slug": "cap",
+      "name": "Stylish Cap",
+      "header": "Sun-Ready Style with a Modern Edge",
+      "description": "A trendy cap for sunny days. Adjustable fit with a breathable design that complements your casual looks while keeping you shaded and stylish.",
+      "image": "/images/cap1.jpg",
+      "price": 15,
+      "category": "Women",
+      "rating": 5,
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "White", "Gray"]
+    },
+    {
+      "id": "7",
+      "slug": "jacket",
+      "name": "Winter Jacket",
+      "header": "Conquer the Cold in Style",
+      "description": "Stay warm during cold days with this insulated winter jacket. Built with windproof and water-resistant materials to keep you protected and comfortable.",
+      "image": "/images/jacket1.jpg",
+      "price": 120,
+      "category": "Women",
+      "rating": 5,
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "White", "Gray"]
+    },
+    {
+      "id": "8",
+      "slug": "underwear",
+      "name": "Underwear",
+      "header": "Comfort You Can Count On",
+      "description": "Soft, supportive underwear made for all-day wear. Breathable, stretchy, and designed to move with you for ultimate comfort and fit.",
+      "image": "/images/underwear.jpg",
+      "price": 199,
+      "category": "Underwear",
+      "rating": 5,
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "White", "Gray"]
+    }
+  ]
+  

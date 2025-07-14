@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mini-Commerce
 
-## Getting Started
+A modern and responsive e-commerce web application built with Next.js 14, TypeScript, Zustand, and React Query. This application allows users to browse a product catalog, view detailed product information, manage a shopping cart, and complete a simple checkout flow.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Project Overview
+
+Mini-Commerce is a frontend technical assessment project that mimics a minimal e-commerce experience. It includes:
+
+* Product listing and filtering
+* Product detail pages
+* Cart and checkout pages
+* Order confirmation with a dynamic ID
+* Persistent cart state
+* Search and category filtering
+* Error handling for fetch and navigation failures
+
+---
+
+## Design Approach
+
+* **Layout:** Mobile-first and responsive grid using Tailwind CSS
+* **Colors:** Clean white base with accent colors like yellow and pink to highlight call-to-actions
+* **Typography:** Clear, accessible font sizes and spacing
+* **Imagery:** Optimized with `next/image` for fast loading
+* **Responsiveness:** CSS utility classes ensure grid adaptation across screen sizes
+
+---
+
+## Tools & Techniques
+
+* **Framework:** Next.js 14 (App Router)
+* **State Management:** Zustand for global cart state
+* **Data Fetching:** React Query (@tanstack/react-query) for API calls, caching, and stale-while-revalidate
+* **Type Checking:** TypeScript with `strict: true` and no `any` types
+* **Styling:** Tailwind CSS, responsive design
+* **Testing:** (Optional) Jest + React Testing Library structure prepared
+* **CI/CD:** Not implemented
+
+---
+
+## SEO Strategy
+
+* `meta` tags per page: title, description
+* Open Graph tags: image, title, URL for sharing
+* Structured data: JSON-LD schema for products
+* `next/image` for automatic image optimization
+* Semantic HTML for better indexing and accessibility
+
+---
+
+## Error-Handling Technique
+
+* **Data Fetch Failures:**
+
+  * Shown as clear UI messages when the product list fails to load
+* **Cart Edge Cases:**
+
+  * Graceful fallback for empty or invalid items
+* **Navigation:**
+
+  * Custom 404 page for unknown routes
+* **Fallback UI:**
+
+  * Spinners and retry messages using `isLoading` and `isError` from React Query
+
+---
+
+## TypeScript & ESLint
+
+* `tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* `.eslintrc.json`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```json
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/explicit-function-return-type": "warn",
+    "react/react-in-jsx-scope": "off"
+  }
+}
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Summary
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is a robust foundation for a scalable e-commerce app. It demonstrates modern tooling, clean UI/UX practices, and production-level error handling and SEO strategies.
