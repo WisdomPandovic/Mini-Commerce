@@ -11,8 +11,14 @@ type Blog = {
   content: string[]
 }
 
-export default async function BlogDetail({ params }: { params: { slug: string } }) {
-  const blog = (blogs as Blog[]).find((b) => b.slug === params.slug)
+type PageProps = {
+  params: {
+    slug: string
+  }
+}
+
+export default function BlogDetail({ params }: PageProps) {
+  const blog = (blogs as Blog[]).find(b => b.slug === params.slug)
 
   if (!blog) return notFound()
 
@@ -27,10 +33,16 @@ export default async function BlogDetail({ params }: { params: { slug: string } 
       <h1 className="text-3xl font-bold mb-4">{blog.title}</h1>
       <p className="text-gray-700 leading-relaxed mb-4">{blog.header}</p>
       {blog.content.map((paragraph, index) => (
-        <p key={index} className="text-gray-700 leading-relaxed mb-3">
+        <p key={index} className="text-gray-700 leading-relaxed mb-4">
           {paragraph}
         </p>
       ))}
     </div>
   )
+}
+
+export async function generateStaticParams() {
+  return blogs.map(blog => ({
+    slug: blog.slug,
+  }))
 }
