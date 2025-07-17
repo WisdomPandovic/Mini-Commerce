@@ -57,7 +57,7 @@ const CategoryList: React.FC<ProductListProps> = ({ category }) => {
                 </p>
                 <Link
                   href={`/product/${product.slug}`}
-                  className="text-black bg-[#f5f5f5] text-sm shawdow border border-black py-2 px-4 block w-full rounded hover:bg-black hover:text-white transition"
+                  className="bg-white text-xs text-black border-2 border-yellow-500 py-2 px-6 hover:bg-black hover:text-white hover:border-black transition duration-300 cursor-pointer"
                 >
                   View Details
                 </Link>
@@ -71,7 +71,7 @@ const CategoryList: React.FC<ProductListProps> = ({ category }) => {
         )}
       </div>
 
-      <div className="flex justify-center items-center py-4">
+      <div className="flex justify-center items-center py-4 my-8">
         <Link
           href="/stores/shop"
           className="bg-white border border-yellow-500 text-black text-sm py-2 px-4 rounded shadow-md hover:bg-black hover:text-white transition duration-300"

@@ -39,7 +39,7 @@ export default function MenWearPage() {
 
   return (
     <div className="max-w-6xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">Men's Collection</h1>
+      <h1 className="text-3xl font-bold mb-6">Men&apos;s Collection</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {menProducts.map((product) => (
           <Link
