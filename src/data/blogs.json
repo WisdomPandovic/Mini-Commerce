@@ -1,44 +1,51 @@
 [
-  {
-    "id": 1,
-    "slug": "how-to-style-your-wardrobe",
-    "title": "How to Style Your Wardrobe",
-    "imageUrl": "/images/cloth.jpg",
-    "date": "January 25, 2025",
-    "header": "Learn the latest trends and styling tips for your wardrobe.",
-    "content": [
-      "Your wardrobe is an extension of your personality. Whether you're dressing for a casual outing or a formal event, the way you style your clothing can boost your confidence and make a statement.",
-      "Start with basics like a white tee, classic jeans, and neutral sneakers. These items are versatile and form the foundation of many outfits. From there, add layers like jackets, scarves, or statement accessories to elevate your look.",
-      "Remember, less is more. Instead of crowding your outfit with too many elements, aim for balance. Combine different textures and colors thoughtfully. Confidence is key—if you feel good in what you're wearing, it shows.",
-      "Pro tip: Invest in timeless pieces that never go out of style and rotate seasonal items to keep your wardrobe fresh and exciting."
-    ]
-  },
-  {
-    "id": 2,
-    "slug": "best-accessories-for-fall",
-    "title": "The Best Accessories for Fall",
-    "imageUrl": "/images/accessories.jpg",
-    "date": "May 5, 2025",
-    "header": "Discover must-have accessories for the upcoming fall season.",
-    "content": [
-      "Fall fashion is all about layers, rich textures, and warm tones. The right accessories can tie your entire look together while adding both function and flair.",
-      "Scarves in plaid or chunky knit instantly bring autumn vibes to your outfit. Try earth tones like rust, camel, or forest green for a cozy feel.",
-      "Leather boots are a staple for this season. Pair them with jeans, skirts, or dresses to add a rugged yet polished edge.",
-      "Don't forget about hats and jewelry—wide-brimmed hats and gold-toned jewelry complement fall colors beautifully."
-    ]
-  },
-  {
-    "id": 3,
-    "slug": "sustainable-fashion-matters",
-    "title": "Sustainable Fashion Matters",
-    "imageUrl": "/images/sustainable-fashion.jpg",
-    "date": "June 10, 2025",
-    "header": "Explore the importance of sustainability in the fashion industry.",
-    "content": [
-      "Sustainability in fashion is more than a trend—it's a responsibility. Fast fashion contributes to pollution and unethical labor practices. By making conscious choices, you help reduce environmental impact.",
-      "Start by supporting brands that prioritize eco-friendly materials, ethical sourcing, and transparent supply chains.",
-      "Thrifting, upcycling, and buying quality over quantity are excellent ways to practice sustainability in your wardrobe.",
-      "Educating yourself and others is also key. Small actions, like washing clothes less frequently or air-drying instead of using a dryer, can make a big difference."
-    ]
-  }
-]
+    {
+      "id": 1,
+      "slug": "how-to-style-your-wardrobe",
+      "title": "How to Style Your Wardrobe",
+      "imageUrl": "/images/cloth.jpg",
+      "date": "January 25, 2025",
+      "header": "Learn the latest trends and styling tips for your wardrobe.",
+      "content": [
+        "Your wardrobe is an extension of your personality. Whether you're dressing for a casual outing or a formal event, the way you style your clothing can boost your confidence and make a statement.",
+        "Start with basics like a white tee, classic jeans, and neutral sneakers. These items are versatile and form the foundation of many outfits. From there, add layers like jackets, scarves, or statement accessories to elevate your look.",
+        "Remember, less is more. Instead of crowding your outfit with too many elements, aim for balance. Combine different textures and colors thoughtfully. Confidence is key—if you feel good in what you're wearing, it shows.",
+        "Pro tip: Invest in timeless pieces that never go out of style and rotate seasonal items to keep your wardrobe fresh and exciting.",
+        "Additionally, pay attention to fit. Tailoring your clothes, even slightly, can dramatically improve your silhouette. A well-fitted jacket or pants can elevate your appearance effortlessly.",
+        "Lastly, stay inspired by following fashion influencers or curating a Pinterest board. Experiment with new styles, but always stay true to what feels authentic to you."
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "best-accessories-for-fall",
+      "title": "The Best Accessories for Fall",
+      "imageUrl": "/images/accessories.jpg",
+      "date": "May 5, 2025",
+      "header": "Discover must-have accessories for the upcoming fall season.",
+      "content": [
+        "Fall fashion is all about layers, rich textures, and warm tones. The right accessories can tie your entire look together while adding both function and flair.",
+        "Scarves in plaid or chunky knit instantly bring autumn vibes to your outfit. Try earth tones like rust, camel, or forest green for a cozy feel.",
+        "Leather boots are a staple for this season. Pair them with jeans, skirts, or dresses to add a rugged yet polished edge.",
+        "Don't forget about hats and jewelry—wide-brimmed hats and gold-toned jewelry complement fall colors beautifully.",
+        "Crossbody bags in suede or leather offer style and convenience. Go for deep hues like burgundy or navy to match the season's palette.",
+        "Fingerless gloves, statement belts, and textured tights are subtle ways to enhance your outfit without over-accessorizing. Mix and match carefully to keep the look cohesive."
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "sustainable-fashion-matters",
+      "title": "Sustainable Fashion Matters",
+      "imageUrl": "/images/sustainable-fashion.jpg",
+      "date": "June 10, 2025",
+      "header": "Explore the importance of sustainability in the fashion industry.",
+      "content": [
+        "Sustainability in fashion is more than a trend—it's a responsibility. Fast fashion contributes to pollution and unethical labor practices. By making conscious choices, you help reduce environmental impact.",
+        "Start by supporting brands that prioritize eco-friendly materials, ethical sourcing, and transparent supply chains.",
+        "Thrifting, upcycling, and buying quality over quantity are excellent ways to practice sustainability in your wardrobe.",
+        "Educating yourself and others is also key. Small actions, like washing clothes less frequently or air-drying instead of using a dryer, can make a big difference.",
+        "You can also explore capsule wardrobes. A capsule wardrobe is a small collection of essential items that can be mixed and matched. This minimizes waste and maximizes utility.",
+        "Look for certifications like Fair Trade, GOTS (Global Organic Textile Standard), or OEKO-TEX when shopping. These ensure higher standards in production and safety for both workers and the planet."
+      ]
+    }
+  ]
+  
