@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useParams, notFound } from 'next/navigation'
 import Image from 'next/image'
+import RecommendedWears from '@/components/RecommendedWears'
 import toast from 'react-hot-toast'
 import { Button } from '@mui/material'
 import { useCartStore } from '@/store/cartStore'
@@ -132,6 +133,7 @@ export default function ProductDetail() {
             </div>
           </div>
         </div>
+        <RecommendedWears category={product.category} currentSlug={product.slug} />
       </div>
     </div>
   )
