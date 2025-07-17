@@ -39,6 +39,9 @@ const Header: FC = () => {
         <Link href="/stores/men-wear" className="text-sm font-bold">
           Men
         </Link>
+        <Link href="/blog" className="text-sm font-bold">
+          Blog
+        </Link>
       </nav>
 
       <div className="flex-1 text-center">
@@ -88,6 +91,9 @@ const Header: FC = () => {
           <Link href="/stores/men-wear" className="text-sm font-bold" onClick={toggleMenu}>
             Men
           </Link>
+          <Link href="/blog" className="text-sm font-bold">
+          Blog
+        </Link>
         </nav>
         <div className="flex flex-col space-y-4">
           <form onSubmit={handleSearchSubmit} className="flex items-center gap-2">
