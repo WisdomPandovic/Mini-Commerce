@@ -1,4 +1,6 @@
-import { notFound } from 'next/navigation'
+'use client'
+
+import { useParams, notFound } from 'next/navigation'
 import blogs from '@/data/blogs.json'
 
 type Blog = {
@@ -11,12 +13,11 @@ type Blog = {
   content: string[]
 }
 
-type Props = {
-  params: { slug: string }
-}
+export default function BlogDetail() {
+  const params = useParams()
+  const slug = typeof params.slug === 'string' ? params.slug : Array.isArray(params.slug) ? params.slug[0] : ''
 
-export default function BlogDetail({ params }: Props) {
-  const blog = (blogs as Blog[]).find((b) => b.slug === params.slug)
+  const blog = (blogs as Blog[]).find((b) => b.slug === slug)
 
   if (!blog) return notFound()
 
@@ -37,10 +38,4 @@ export default function BlogDetail({ params }: Props) {
       ))}
     </div>
   )
-}
-
-export function generateStaticParams() {
-  return blogs.map((blog) => ({
-    slug: blog.slug,
-  }))
 }
