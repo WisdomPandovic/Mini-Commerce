@@ -11,13 +11,19 @@ type Blog = {
   content: string[]
 }
 
-type PageProps = {
+export async function generateStaticParams() {
+  return blogs.map(blog => ({
+    slug: blog.slug,
+  }))
+}
+
+type Props = {
   params: {
     slug: string
   }
 }
 
-export default function BlogDetail({ params }: PageProps) {
+export default async function BlogDetail({ params }: Props) {
   const blog = (blogs as Blog[]).find(b => b.slug === params.slug)
 
   if (!blog) return notFound()
@@ -39,10 +45,4 @@ export default function BlogDetail({ params }: PageProps) {
       ))}
     </div>
   )
-}
-
-export async function generateStaticParams() {
-  return blogs.map(blog => ({
-    slug: blog.slug,
-  }))
 }
